@@ -1,0 +1,70 @@
+@media screen and ( max-width: 750px )
+  .header 
+    & .nav 
+      justify-content: space-between
+      & .menu 
+        display: flex 
+        justify-content: flex-end
+        width: 100%
+        & .burger 
+          display: flex 
+          align-items: center
+          justify-content: flex-end 
+          width: 25px 
+          height: 15px
+          position: relative 
+          z-index: 9999
+          &.active span 
+            width: 21px 
+            background: #ffffff
+          &.active::before 
+            width: 21px 
+            background: #ffffff
+          &.active::after
+            background: #ffffff
+          & span 
+            background: #4d4959
+            height: 2px 
+            width: 16px 
+            transition: .3s linear 
+          &::before
+            content: ''
+            position: absolute
+            width: 10px 
+            height: 2px 
+            background: #4d4959
+            top: 0
+            transition: .3s linear 
+          &::after
+            content: ''
+            position: absolute
+            width: 21px 
+            height: 2px 
+            background: #4d4959
+            bottom: 0
+            transition: .3s linear  
+        & .main-menu 
+          position: fixed
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          background: rgba(#4d4959,.8)
+          transition: .3s linear
+          padding-top: 200px
+          transform: translateX(-100%)
+          transition: .3s linear 
+          &.show 
+            transform: translateX(0)
+          & a 
+            display: block 
+            line-height: 50px
+            padding: 0
+            text-align: center
+            color: #ffffff
+            font-size: 16px 
+            &:nth-child(2)
+              padding: 0
+            &::before
+              display: none 
+              
