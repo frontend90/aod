@@ -1,0 +1,42 @@
+.work
+  & .work-wrap
+    display: flex
+    position: relative
+    & .block-column 
+      flex: 0 1 33.333%
+    & .block-column-img
+      position: relative
+      & a 
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    & .block-column-big
+      flex: 0 1 66.667%
+      position: relative
+      & a 
+        display: inline-block 
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+    & .block-content
+      & .block-title
+        text-align: center
+        padding: 70px 65px 95px 65px
+        & .desc 
+          margin-top: 30px 
+          & h5 
+            +bold 
+            text-transform: uppercase
+            font-size: 18px 
+            color: #353738
+            letter-spacing: 3.6px 
+          & p 
+            margin-top: 25px  
+            line-height: 30px 
+            text-align: justify
+      & .block-img-small
+        padding: 0 0 37.5% 0 

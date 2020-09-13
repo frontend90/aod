@@ -41,6 +41,16 @@ body {
   height: 100%;
 }
 
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ibg img {
+  display: none;
+}
+
 .header {
   height: 100vh;
   background: url(../img/header/bg.png) no-repeat;
@@ -117,6 +127,120 @@ body {
   border-radius: 50%;
   bottom: 1px;
   right: 0;
+}
+
+.about {
+  background: #f7f7f7;
+  padding: 110px 0 140px 0;
+}
+
+.about .about-block {
+  text-align: center;
+}
+
+.about .about-block .about-text {
+  margin-top: 30px;
+}
+
+.about .about-block .about-text h5 {
+  text-transform: uppercase;
+  font-family: 'Lato-Bold';
+  color: #353738;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+}
+
+.about .about-block .about-text p {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #848789;
+  line-height: 34px;
+}
+
+.work .work-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.work .work-wrap .block-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+
+.work .work-wrap .block-column-img {
+  position: relative;
+}
+
+.work .work-wrap .block-column-img a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.work .work-wrap .block-column-big {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 66.667%;
+          flex: 0 1 66.667%;
+  position: relative;
+}
+
+.work .work-wrap .block-column-big a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.work .work-wrap .block-content .block-title {
+  text-align: center;
+  padding: 70px 65px 95px 65px;
+}
+
+.work .work-wrap .block-content .block-title .desc {
+  margin-top: 30px;
+}
+
+.work .work-wrap .block-content .block-title .desc h5 {
+  font-family: 'Lato-Bold';
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #353738;
+  letter-spacing: 3.6px;
+}
+
+.work .work-wrap .block-content .block-title .desc p {
+  margin-top: 25px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.work .work-wrap .block-content .block-img-small {
+  padding: 0 0 37.5% 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .work .work-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .work-wrap .block-column-big {
+    padding: 0 0 50% 0;
+  }
+  .work .work-wrap .block-column-img {
+    padding: 0 0 50% 0;
+  }
+  .work .work-wrap .block-content .block-title {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 750px) {
