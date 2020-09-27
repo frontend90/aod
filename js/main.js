@@ -23,3 +23,14 @@ function ibg() {
   });
 }
 ibg();
+
+/*************       feedback  slick       ************/
+$('.feedback-slider').slick({
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  dots: true,
+  autoplay: true,
+  speed: 1000
+});

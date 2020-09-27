@@ -9,6 +9,10 @@
       & .block-content
         & .block-title
           padding: 20px 
+@media screen and ( max-width: 900px )
+  .shop 
+    & .shop-gallery 
+      flex-direction: column 
 @media screen and ( max-width: 750px )
   .header 
     & .nav 
@@ -78,4 +82,16 @@
               padding: 0
             &::before
               display: none 
+@media screen and ( max-width: 600px )
+  .shop 
+    & .shop-gallery 
+      & .block-gallery-big
+        & .block-gallery-wrap
+          flex-direction: column 
+@media screen and ( max-width: 400px )
+  .shop 
+    & .shop-offer
+      & .btn 
+        & button 
+          width: 100%
               
