@@ -12,6 +12,11 @@ document.documentElement.addEventListener("click", function (e) {
     user_menu.classList.remove('show');
     user_icon.classList.remove('active');
   }
+
+  $('.main-menu a').click(function () {
+    $('.main-menu').removeClass('show');
+    $('.burger').removeClass('active');
+  });
 });
 
 /*************    ibg    ********************/
@@ -33,4 +38,22 @@ $('.feedback-slider').slick({
   dots: true,
   autoplay: true,
   speed: 1000
+});
+
+/*********************     плавный скролл        ************************/
+$(document).ready(function () {
+  $('a[href^="#"]').click(function () {
+    elementClick = $(this).attr("href");
+    destination = $(elementClick).offset().top;
+    if ($.browser) {
+      $('body').animate({
+        scrollTop: destination
+      }, 1000);
+    } else {
+      $('html').animate({
+        scrollTop: destination
+      }, 1000);
+    }
+    return false;
+  });
 });

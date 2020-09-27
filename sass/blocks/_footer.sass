@@ -1,0 +1,47 @@
+.footer
+  background: #f7f7f7
+  padding: 100px 0
+  & .footer-wrap
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .block 
+      & p 
+        +bold 
+      & span 
+        display: block 
+        font-size: 14px 
+        +ital 
+        & a 
+          color: #848789
+          &:hover
+            text-decoration: underline
+      & a 
+        margin-left: 10px 
+        &:first-of-type
+          margin-left: 0 
+        & .fab 
+          +brand 
+          width: 35px 
+          height: 35px 
+          border-radius: 50%
+          color: #ffffff
+          display: inline-flex
+          align-items: center
+          justify-content: center
+        & .fa-twitter
+          background: #96CDEF
+        & .fa-facebook-f
+          background: #617BBA
+        & .fa-pinterest-p
+          background: #CE5755
+    & .right 
+      display: flex 
+      align-items: center
+      & p 
+        +ital 
+        font-size: 14px 
+      & img 
+        margin-left: 10px 
+
+

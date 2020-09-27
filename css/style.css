@@ -651,6 +651,96 @@ body {
   font-size: 24px;
 }
 
+.footer {
+  background: #f7f7f7;
+  padding: 100px 0;
+}
+
+.footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-wrap .block p {
+  font-family: 'Lato-Bold';
+}
+
+.footer .footer-wrap .block span {
+  display: block;
+  font-size: 14px;
+  font-family: 'Lato-Italic';
+}
+
+.footer .footer-wrap .block span a {
+  color: #848789;
+}
+
+.footer .footer-wrap .block span a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-wrap .block a {
+  margin-left: 10px;
+}
+
+.footer .footer-wrap .block a:first-of-type {
+  margin-left: 0;
+}
+
+.footer .footer-wrap .block a .fab {
+  font-family: 'fa-brands-400';
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-wrap .block a .fa-twitter {
+  background: #96CDEF;
+}
+
+.footer .footer-wrap .block a .fa-facebook-f {
+  background: #617BBA;
+}
+
+.footer .footer-wrap .block a .fa-pinterest-p {
+  background: #CE5755;
+}
+
+.footer .footer-wrap .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-wrap .right p {
+  font-family: 'Lato-Italic';
+  font-size: 14px;
+}
+
+.footer .footer-wrap .right img {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 1100px) {
   .work .work-wrap {
     -webkit-box-orient: vertical;
@@ -792,6 +882,22 @@ body {
   }
   .contact .contact-wrap .form form .btn {
     margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer .footer-wrap .social {
+    margin-top: 20px;
+  }
+  .footer .footer-wrap .right {
     margin-top: 20px;
   }
 }
